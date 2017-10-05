@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Type Submit</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+</head>
+<body>
+    <script src="./../Assets/angularjs/Pages/Home/app.js"></script>
+    <script src="./../Assets/angularjs/Pages/Home/appCtrl.js"></script>
+    <div ng-controller="MainAppCtrl">
+        <h1>Home Page</h1>
+        <input type="text" name="fname" placeholder="first name" autofocus autocomplete="off">
+        <input type="submit" id="submit-btn1" value="Submit">
+
+        <div>
+            <h1 ng-repeat="item in controller.list">{{item.label}}</h1>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
