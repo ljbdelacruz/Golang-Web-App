@@ -7,7 +7,7 @@ angular.module('ngStarterKit')
              $scope.controller.model={username:'', password:''};
              
              $scope.Login=function(){
-                $http.post("/CheckAuthentication/", {username:""+$scope.controller.model.username, password:""+$scope.controller.model.password}).success(function (data, status, headers, config) {
+                $http.post("/CheckAuthentication", {username:""+$scope.controller.model.username, password:""+$scope.controller.model.password}).success(function (data, status, headers, config) {
                         console.log(data);
                 }).error(function (data, status, headers, config) {
                         console.log(data);
@@ -36,5 +36,5 @@ angular.module('ngStarterKit')
                 //         console.log(data);
                 // });
              }
-
+             
 }]);

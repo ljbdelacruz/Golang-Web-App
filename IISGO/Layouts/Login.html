@@ -37,11 +37,13 @@
     <script src="./../Assets/angularjs/Services/utility/timeout.utility.js"></script>
     <!--Directives-->
     <script src="./../Assets/angularjs/Components/Widgets/ImageUploader/ImageUploader.widget.js"></script>
+    <script src="./../Assets/angularjs/Components/Widgets/loadingScreen/loadingScreen.widget.js"></script>
 
     <script src="./../Assets/angularjs/Pages/Login/app.js"></script>
     <script src="./../Assets/angularjs/Pages/Login/appCtrl.js"></script>
     <div class="container body-content">
             <h1>Login Page</h1>
+            <loading-screen1 style="width:100%; height:100%; position:absolute; top:0px; left:0px;"></loading-screen1>
             <div ng-controller="MainAppCtrl">
                     <input type="text" placeholder="Username" ng-model="controller.model.username" />
                     <input type="password" placeholder="Password" ng-model="controller.model.password" />

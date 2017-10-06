@@ -8,6 +8,7 @@ angular.module('ngStarterKit', [
             'ngRoute',
             /*Widgets*/
             'directives.imageUploader1',
+            'directives.loadingScreen1',
             /*Services*/
             'otherApp'
 ])
